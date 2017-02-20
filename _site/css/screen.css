@@ -14,7 +14,7 @@ html, body {
   padding: 0; }
 
 body {
-  font-family: "Nunito Sans", "Helvetica Neue", "Helvetica", "Arial"; }
+  font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif; }
 
 a {
   color: #00a4ca;
@@ -31,13 +31,15 @@ h1 strong, h2 strong {
 
 h1 {
   font-weight: 300;
-  font-size: 2.3em;
-  margin: 0; }
+  font-size: 45px;
+  margin: 0;
+  margin-bottom: 30px; }
 
 h2 {
   font-weight: 300;
   font-size: 2.2em;
-  margin: 0 0 30px 0; }
+  margin: 0 0 30px 0;
+  text-align: center; }
 
 h3 {
   margin: 20px 0 10px 0; }
@@ -81,10 +83,29 @@ p, address {
 .hero {
   color: #ffffff;
   text-align: center;
-  background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
-  padding-top: 50px; }
+  padding-top: 150px;
+  background-image: url(https://images.unsplash.com/photo-1422118956051-420a81c79553?dpr=1&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=);
+  background-position-y: -160px;
+  height: 500px; }
   .hero p {
     color: #fff; }
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: .6;
+  height: 850px; }
+
+.subtext {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px !important;
+  margin: 0; }
 
 @media (min-width: 768px) {
   .flex {
@@ -118,10 +139,7 @@ p, address {
 
 header {
   color: #fff;
-  padding: 20px 0;
-  background: #4182e4;
-  /* Old browsers */
-  background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #4182e4; }
+  padding: 20px 0; }
   header a {
     color: #fff;
     text-decoration: none;
@@ -151,7 +169,7 @@ header {
   padding: 20px 0 0; }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 200px; }
 
 section + section {
   padding-top: 0; }
@@ -451,8 +469,9 @@ blockquote:before {
   cursor: pointer; }
 
 .button.alt a {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 3px;
+  background-color: white;
+  color: #161616;
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 16px 50px; }
 
