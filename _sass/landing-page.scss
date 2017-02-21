@@ -34,14 +34,28 @@
 .hero {
 	color: #ffffff;
     text-align: center;
-    padding-top: 150px;
-    background-image: url(https://images.unsplash.com/photo-1422118956051-420a81c79553?dpr=1&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=);
+    padding-top: 0px;
     background-position-y: -160px;
 	height: 500px;
 	p {
 		color: #fff;
 	}
 }
+@media #{$desktop} {
+	.hero {
+		padding-top: 150px;
+		background-image: url(/images/bg1.jpeg);
+	}
+}
+
+@media #{$tablet} {
+	.hero {
+		background-image: url(/images/bg1mobile.jpeg);
+		height: 350px;
+		padding-top:60px;
+	}
+}
+
 
 .hero:before {
 	content: '';
@@ -78,4 +92,5 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+
 }
